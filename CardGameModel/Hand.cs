@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Cards
+namespace CardGameModel
 {
     public class Hand
     {
@@ -59,7 +59,7 @@ namespace Cards
         #endregion
 
         #region Filter By Max Speed
-        
+
         public IList<Car> FilterCarsByMaxSpeed(double maxSpeed)
         {
             return _cars.Where(c => c.MaxSpeed > maxSpeed).ToList();
@@ -97,7 +97,7 @@ namespace Cards
             var resultString = $"card is the winner. Winner Score {winnerScore}. Looser score: {comparisonList.Count - winnerScore}\n";
 
 
-            return winnerCard == 1 ? $"First {resultString}" : $"Second {resultString}";  
+            return winnerCard == 1 ? $"First {resultString}" : $"Second {resultString}";
         }
 
         public string CompareCardsByCarProperties(

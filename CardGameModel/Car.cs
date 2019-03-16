@@ -1,7 +1,6 @@
-﻿
-namespace Cards
+﻿namespace CardGameModel
 {
-    public class Car 
+    public class Car
     {
         public double MaxSpeed { get; set; }
         public double EngineSize { get; set; }
@@ -10,7 +9,7 @@ namespace Cards
         public int Cylinders { get; set; }
 
         #region Maximum and Minimum constants
-        
+
         // Values are measured in Km/h
         public const double MaximumMaxSpeed = 435.31;
         public const double MinimumMaxSpeed = 104.60;
@@ -37,13 +36,13 @@ namespace Cards
         public (int, int, int, int, int) CompareCarProperties(Car other)
         {
             var comparisonTuple = (
-                maxSpeedComparison: MaxSpeed.CompareTo(other.MaxSpeed), 
+                maxSpeedComparison: MaxSpeed.CompareTo(other.MaxSpeed),
                 accelerationComparison: Acceleration.CompareTo(other.Acceleration),
-                cylinderComparison: Cylinders.CompareTo(other.Cylinders), 
-                engineSizeComparison: EngineSize.CompareTo(other.EngineSize), 
+                cylinderComparison: Cylinders.CompareTo(other.Cylinders),
+                engineSizeComparison: EngineSize.CompareTo(other.EngineSize),
                 horsePowerComparison: HorsePower.CompareTo(other.HorsePower)
                 );
-          
+
             return comparisonTuple;
         }
 

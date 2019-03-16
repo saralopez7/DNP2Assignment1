@@ -57,8 +57,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CarLibrary\CardGameModel.csproj">
-      <Project>{c99c2c73-c29d-4301-9bdc-da77984e9f85}</Project>
+    <ProjectReference Include="..\CardGameModel\CardGameModel.csproj">
+      <Project>{8224bdf7-fcff-4af1-bf8a-8e95063f5f1b}</Project>
       <Name>CardGameModel</Name>
     </ProjectReference>
   </ItemGroup>

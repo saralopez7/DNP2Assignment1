@@ -1,5 +1,5 @@
 ﻿using System;
-using Cards;
+using CardGameModel;
 
 namespace Assignment1
 {

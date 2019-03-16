@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace Cards
+namespace CardGameModel
 {
     public static class Extensions
     {
@@ -18,7 +18,7 @@ namespace Cards
         public static string ToString<T>(this IEnumerable<T> list)
         {
             var sb = new StringBuilder();
-            
+
             foreach (var item in list)
             {
                 sb.Append(item + "\n\n");

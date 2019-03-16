@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Cards;
+using CardGameModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CardUnitTest
